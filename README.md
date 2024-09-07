@@ -1,4 +1,4 @@
-<img src="https://github.com/giovxna/heal-us/blob/main/assets/images/capa-heal-us.png">
+<img src="https://github.com/giovxna/heal-us/blob/main/public/assets/images/capa-heal-us.png">
 
 <p align="center">
 Crie rotinas saudáveis com a ajuda de IA e cuide do seu bem-estar preventivamente!
