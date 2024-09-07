@@ -295,13 +295,16 @@
                     .then(function (data) {
                         searchButton.disabled = false;
 
-                        var result = data.candidates[0].content.parts[0].text;
-
-                        result = result.replace(/<\/?[^>]+(>|$)/g, "");
-
-                        var searchResult = document.getElementById("search-result");
-                        searchResult.innerHTML = result;
+                        if (data.candidates && data.candidates.length > 0) {
+                            var result = data.candidates[0].content.parts[0].text;
+                            result = result.replace(/<\/?[^>]+(>|$)/g, "");
+                            var searchResult = document.getElementById("search-result");
+                            searchResult.innerHTML = result;
+                        } else {
+                            console.error("Nenhum candidato encontrado na resposta da API.");
+                        }
                     })
+
                     .catch(function (error) {
                         console.error("Erro:", error);
                         searchButton.disabled = false;
