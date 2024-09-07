@@ -39,5 +39,5 @@ A aplicação oferece uma interface simples e direta. Ao digitar um tópico de i
 
 
 <video width="320" height="240" controls>
-  <source src="caminho/do/video.mp4" type="video/mp4">
+  <source src="https://github.com/giovxna/heal-us/blob/main/public/assets/images/Heal%20Us.mp4" type="video/mp4">
 </video>
