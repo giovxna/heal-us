@@ -5,12 +5,10 @@ const fs = require('fs');
 
 const app = express();
 
-app.get('/', (req, res) => {
-    let html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
-    html = html.replace('{{process.env.API_KEY}}', process.env.API_KEY);
-    res.send(html);
-});
-
+let html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+html = html.replace('{{API_KEY}}', process.env.API_KEY);
+res.send(html);
+    
 app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
