@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <!-- menu -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav-logo">Heal Us</a>
@@ -22,14 +21,24 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">início</a>
+                        <a href="#home" class="nav-link active-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">sobre</a>
+                        <a href="#about" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">sobre</a>
+                        <a href="#showcases" class="nav-link">Produtos</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#faqs" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dev" class="nav-link">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contato</a>
+                    </li>
+
                 </ul>
 
                 <div class="nav-close" id="nav-close">
@@ -44,185 +53,205 @@
     </header>
 
     <main class="main">
+        <!-- banner -->
         <section class="home" id="home">
+            <div class="home-container container grid">
+                <img src="./assets/images/family.png" alt="" class="home-img" />
+                <div class="home-data">
+                    <h2 class="home-title">
+                        Crie rotinas saudáveis com a ajuda de IA e cuide do seu bem-estar preventivamente!
+                    </h2>
+
+                    <a href="#about" class="button button-flex">Começar</a>
+                </div>
+            </div>
         </section>
+
         <!-- sobre -->
         <section class="about section container" id="about">
             <div class="about-container grid">
-                <img src="./capa-heal-us.png" alt="" class="about-img" />
+                <img src="./assets/images/family.png" alt="" class="about-img" />
                 <div class="about-data">
                     <h2 class="section-title about-title">
-                        | nossa missão é bem simples
+                        Nossa missão é bem simples
                     </h2>
                     <p class="about-description">
-                        criamos <span>posie</span> para ajudar você, jovem mulher, a organizar seus pensamentos,
-                        relaxar sua mente e
-                        superar suas dúvidas para que você possa parar de se estressar com o futuro e fazer as coisas
-                        acontecerem agora.
+                        Criamos o <span>HealUs</span> para ajudar você a organizar seus hábitos de saúde, relaxar sua
+                        mente e superar suas preocupações com seu bem-estar. Nossa plataforma visa permitir que você
+                        pare de se preocupar com possíveis problemas de saúde no futuro e comece a agir agora, fazendo
+                        escolhas saudáveis e informadas que impactem positivamente a sua qualidade de vida.
                     </p>
                     <div class="about-details">
-                        <h2 class="section-title about-title">
-                            – os primeiros passos serão...
-                        </h2>
                         <p class="about-details-description">
-                            <span>✽</span>
-                            reconhecer
+                            <i class="ri-checkbox-fill about-details-icon"></i>
+                            Facilidade
                         </p>
                         <p class="about-details-description">
-                            <span>✽</span>
-                            ressignificar
+                            <i class="ri-checkbox-fill about-details-icon"></i>
+                            Personalização
                         </p>
                         <p class="about-details-description">
-                            <span>✽</span>
-                            planejar
+                            <i class="ri-checkbox-fill about-details-icon"></i>
+                            Prevenção
                         </p>
-                        <p class="about-details-description">
-                            <span>✽</span>
-                            mudar
-                        </p>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- step by step -->
+        <!-- passo a passo de uso -->
         <section class="steps section container">
             <div class="steps-bg">
                 <h2 class="section-title-center steps-title">
-                    como iremos te ajudar, então?
+                    Como funciona a <br />
+                    Heal Us?
                 </h2>
                 <div class="steps-container grid">
                     <div class="steps-card">
                         <div class="steps-card-number">01</div>
-                        <h3 class="steps-card-title">junte-se a nós</h3>
+                        <h3 class="steps-card-title">Identifique seus hábitos</h3>
                         <p class="steps-card-description">
-                            leia todas as dicas mais recentes sobre autocuidado, atenção plena e produtividade.
+                            Ao identificar padrões no seu dia a dia, o HealUs poderá oferecer sugestões mais
+                            precisas e personalizadas para melhorar seu bem-estar.
                         </p>
                     </div>
 
                     <div class="steps-card">
                         <div class="steps-card-number">02</div>
-                        <h3 class="steps-card-title">ponha em prática</h3>
+                        <h3 class="steps-card-title">Faça perguntas </h3>
                         <p class="steps-card-description">
-                            ressignifique a sua jornada e e construa uma nova jornada para sua vida.
+                            A plataforma responderá com dicas baseadas nos seus dados e nas melhores práticas
+                            preventivas, ajudando
+                            você a tomar decisões mais conscientes sobre seu estilo de vida.
                         </p>
                     </div>
 
                     <div class="steps-card">
                         <div class="steps-card-number">03</div>
-                        <h3 class="steps-card-title">veja a mudança</h3>
+                        <h3 class="steps-card-title">Implemente mudanças</h3>
                         <p class="steps-card-description">
-                            autocuidado significa dar-se permissão para fazer uma pausa.
+                            O HealUs
+                            recomenda ações que são fáceis de integrar ao seu dia a dia, como ajustar sua dieta ou
+                            melhorar a qualidade do sono, ajudando você a alcançar resultados duradouros.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="info section container" id="info">
-            <div class="info-data">
-                <h2 class="section-title-center info-title ">
-                    uma experiência única <br> sobre sua autoestima
-                </h2>
-                <div class="section-bar">
-                </div>
-                <div class="info-container container grid">
-                    <div class="info-group">
-                        <div class="info-item">
-                            <header class="info-header">
-                                <h3 class="info-item-title">
-                                    desenvolvimento
-                                </h3>
-                                <div class="info-content">
-                                    <p class="info-description">
-                                        desenvolva uma mentalidade <br> saudável e positiva que lhe dê <br> paz de
-                                        espírito e
-                                        confiança <br> para perseguir seus maiores <br> objetivos.
-                                    </p>
-                                </div>
-                            </header>
+        <!-- o faq de milhõesss -->
+        <section class="faq section" id="faqs">
+            <h2 class="section-title-center faq-title container">
+                As perguntas mais <br />
+                frequentes
+            </h2>
+
+            <div class="faq-container container grid">
+                <div class="faq-group">
+                    <div class="faq-item">
+                        <header class="faq-header">
+                            <i class="ri-add-line faq-icon"></i>
+                            <h3 class="faq-item-title">O que é o HealUs?</h3>
+                        </header>
+                        <div class="faq-content">
+                            <p class="faq-description">
+                                O HealUs é uma plataforma de saúde preventiva que utiliza inteligência artificial para
+                                analisar seus hábitos de vida e fornecer recomendações personalizadas. A plataforma
+                                ajuda você a melhorar sua saúde ao sugerir mudanças simples no seu dia a dia, visando
+                                prevenir problemas futuros e promover o bem-estar.
+                            </p>
                         </div>
-                        <div class="info-item">
-                            <header class="info-header">
-                                <h3 class="info-item-title">
-                                    mudança
-                                </h3>
-                                <div class="info-content">
-                                    <p class="info-description">
-                                        crie práticas de autocuidado e <br> rotinas diárias que ajudem a <br> cuidar
-                                        de si mesma
-                                        para reduzir o <br> esgotamento, o estresse e a <br> sobrecarga.
-                                    </p>
-                                </div>
-                            </header>
+                    </div>
+                    <div class="faq-item">
+                        <header class="faq-header">
+                            <i class="ri-add-line faq-icon"></i>
+                            <h3 class="faq-item-title">
+                                Como o HealUs pode me ajuda?
+                            </h3>
+                        </header>
+                        <div class="faq-content">
+                            <p class="faq-description">
+                                Através de perguntas que você faz à IA, o HealUs analisa seus hábitos atuais de saúde,
+                                como alimentação, sono e exercícios, e oferece sugestões personalizadas. A ideia é te
+                                ajudar a fazer mudanças graduais e eficazes para manter seu corpo e mente saudáveis a
+                                longo prazo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <header class="faq-header">
+                            <i class="ri-add-line faq-icon"></i>
+                            <h3 class="faq-item-title">
+                                Quais dados o HealUs utiliza para gerar recomendações?
+                            </h3>
+                        </header>
+                        <div class="faq-content">
+                            <p class="faq-description">
+                                O HealUs utiliza os dados que você fornece sobre seus hábitos e estilo de vida, como
+                                padrões de sono, alimentação, exercícios físicos, além de informações de dispositivos
+                                vestíveis (se disponíveis), para gerar recomendações. Todos os dados são mantidos em
+                                sigilo e utilizados apenas para melhorar a sua experiência de saúde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-group">
+                    <div class="faq-item">
+                        <header class="faq-header">
+                            <i class="ri-add-line faq-icon"></i>
+                            <h3 class="faq-item-title">
+                                A plataforma HealUs é adequada para qualquer pessoa?
+                            </h3>
+                        </header>
+                        <div class="faq-content">
+                            <p class="faq-description">
+                                Sim! O HealUs foi projetado para ser útil para qualquer pessoa que deseje melhorar sua
+                                saúde e adotar hábitos preventivos, independentemente da idade ou condição física. As
+                                recomendações são personalizadas com base em suas necessidades individuais.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <header class="faq-header">
+                            <i class="ri-add-line faq-icon"></i>
+                            <h3 class="faq-item-title">
+                                Preciso de equipamentos específicos para usar o HealUs?
+                            </h3>
+                        </header>
+                        <div class="faq-content">
+                            <p class="faq-description">
+                                Não, você não precisa de equipamentos especiais para usar o HealUs. Embora dispositivos
+                                de monitoramento de saúde (como smartwatches) possam fornecer mais dados e melhorar as
+                                recomendações, você pode utilizar a plataforma apenas com informações que já possui
+                                sobre seus hábitos diários.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <header class="faq-header">
+                            <i class="ri-add-line faq-icon"></i>
+                            <h3 class="faq-item-title">
+                                Como o HealUs se diferencia de uma busca no Google?
+                            </h3>
+                        </header>
+                        <div class="faq-content">
+                            <p class="faq-description">
+                                Ao contrário de uma busca no Google, onde você recebe informações genéricas, o HealUs
+                                fornece recomendações personalizadas com base nos dados que você compartilha sobre seus
+                                hábitos de vida. Ele usa IA avançada para analisar essas informações e oferecer
+                                conselhos específicos e adaptados ao seu perfil de saúde.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="final container">
-            <h2 class="section-title">
-                pronta para mudar sua visão do mundo? <br>
-                comece com <span>posie</span>.
-            </h2>
-        </div>
     </main>
+    <p class="footer-copy">&#169; Heal Us. Todos os direitos reservados</p>
 
-    <!-- footer -->
-    <footer class="footer section">
-        <div class="footer-container container grid">
-            <div class="footer-content">
-                <a href="#" class="footer-logo">✽</a>
-                <h3 class="footer-title">
-                    inscreva-se para novidades do <br />
-                    blog!
-                </h3>
-                <div class="footer-subscribe">
-                    <input type="email" placeholder="Insira seu e-mail" class="footer-input" />
-                    <button class="button button-flex footer-button">receber</button>
-                </div>
-            </div>
-            <div class="footer-content">
-                <h3 class="footer-title">serviços</h3>
-
-                <ul class="footer_data">
-                    <li class="footer-info">contato</li>
-                    <li class="footer-info">dúvidas</li>
-                    <li class="footer-info">reclamações</li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h3 class="footer-title">projeto</h3>
-                <ul class="footer_data">
-                    <li class="footer-info">sobre nós</li>
-                    <li class="footer-info">nossa missão</li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h3 class="footer-title">redes sociais</h3>
-                <ul class="footer_data">
-                    <div class="footer-social">
-                        <a href="#" class="footer-social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/populusnine" class="footer-social-link">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                        <a href="#" class="footer-social-link">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                    </div>
-                </ul>
-            </div>
-        </div>
-
-        <p class="footer-copy">&#169; posie | 2022 | todos os direitos reservados.</p>
-    </footer>
-
-    <script src="./assets/js/index.js"></script>
 </body>
 
-</html>
+<script src="./assets/js/index.js"></script>
 
 </html>

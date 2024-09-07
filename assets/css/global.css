@@ -1,192 +1,152 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-
 * {
-  font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
 }
 
+:root {
+    --header-height: 3.5rem;
 
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--container--color);
-  color: var(--text-color);
+    /* cores */
+    --hue: 152;
+    --green: #164a47;
+    --light-green: #2c938c;
+    --dark-green: #0a6862;
+    --black: #202020;
+    --bg: #fafafa;
+    --title: #202020;
+    --text: #868686;
+
+    /* tamanhos da fonte */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h1: 1.5rem;
+    --h2: 1.25rem;
+    --h3: 1rem;
+    --normal: 0.938rem;
+    --small: 0.813rem;
+    --smaller: 0.75rem;
+
+    /* margin */
+    --m1: 0.5rem;
+    --m2: 0.75rem;
+    --m3: 1rem;
+    --m4: 1.5rem;
+    --m5: 2rem;
+    --m6: 2.5rem;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
 }
 
-
-h1,
-h2,
-h3,
-p {
-  line-height: 140%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.container {
-  max-width: 870px;
-
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 2.7rem;
+        --h1: 2.25rem;
+        --h2: 1.5rem;
+        --h3: 1.25rem;
+        --normal: 1rem;
+        --small: 0.875rem;
+        --smaller: 0.813rem;
+    }
 }
 
 .section {
-  padding: 4.5rem 0 2rem;
+    padding: 5.5rem 0 1rem;
 }
 
-.section-title {
-  position: relative;
+.section-title,
+.section-title-center {
+    font-size: var(--h2);
+    margin-bottom: var(--m5);
+    line-height: 140%;
+}
 
-  margin-bottom: 2.5rem;
+.section-title-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: var(--m4);
+    margin-right: var(--m4);
+}
+
+.grid {
+    display: grid;
+}
+
+.main {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal);
+}
+
+body {
+    background-color: var(--bg);
+    margin: var(--header-height) 0 0 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title);
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--title);
+    margin: var(--header-height) 0 0 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+p {
+    font-weight: 500;
+    color: var(--text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
