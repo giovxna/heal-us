@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -50,17 +49,22 @@
         <!-- banner -->
         <section class="home" id="home">
             <div class="home-container container grid">
-                <img src="./assets/images/family.png" alt="" class="home-img" />
+                <!-- <img src="./assets/images/family.png" alt="" class="home-img" /> -->
                 <div class="home-data">
                     <h2 class="home-title">
                         Crie rotinas saudáveis com a ajuda de IA e cuide do seu bem-estar preventivamente!
                     </h2>
                     <form action="" class="home-search">
-                        <input type="search" placeholder="Digite sua dúvida" class="home-search-input">
-                        <button class="button button-flex">Conversar</button>
+                        <input placeholder="Digite sua dúvida" class="home-search-input" id="search-prompt">
+                        <button type="button" class="button button-flex" id="search-btn">Conversar</button>
                     </form>
+                    <div class="result" id="search-result">
+                        
+                    </div>
                 </div>
+                
             </div>
+
         </section>
 
         <!-- sobre -->
@@ -249,5 +253,6 @@
 </body>
 
 <script src="./assets/js/index.js"></script>
+<script src="./assets/js/logic.js"></script>
 
 </html>

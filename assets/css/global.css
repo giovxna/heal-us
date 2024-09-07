@@ -58,7 +58,7 @@
 }
 
 .section {
-    padding: 5.5rem 0 1rem;
+    padding: 1rem 0 1rem;
 }
 
 .section-title,
@@ -121,32 +121,7 @@ img {
     height: auto;
 }
 
-body,
-button,
-input,
-textarea {
-    font-family: var(--body-font);
-    font-size: var(--normal);
-}
-
-body {
-    background-color: var(--bg);
-    color: var(--title);
-    margin: var(--header-height) 0 0 0;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
 p {
     font-weight: 500;
     color: var(--text);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }

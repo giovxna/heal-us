@@ -121,11 +121,6 @@
   row-gap: 2rem;
 }
 
-.home-img {
-  justify-self: center;
-  border-radius: 1rem;
-}
-
 .home-title {
   font-size: var(--big-font-size);
   margin-bottom: var(--m3);
@@ -152,6 +147,10 @@
 
 .home-search-input::placeholder {
   color: var(--text);
+}
+
+.home-search input {
+  background-color: var(--bg);
 }
 
 /* pré-definições de todos os botões */
@@ -385,9 +384,6 @@
 }
 
 @media screen and (min-width: 576px) {
-  .home-search {
-    width: 412px;
-  }
 
   .steps-container {
     grid-template-columns: repeat(2, 1fr);
@@ -425,6 +421,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .home-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .home {
     padding: 10rem 0 5rem;
   }
@@ -455,7 +455,7 @@
   }
 
   .section {
-    padding: 8rem 0 1rem;
+    padding: 2rem 0 1rem;
   }
 
   .section-title,
@@ -464,11 +464,7 @@
   }
 
   .home {
-    padding: 13rem 0 5rem;
-  }
-
-  .home-img {
-    width: 350px;
+    padding: 8em 0 5rem;
   }
 
   .home-search {
@@ -484,7 +480,7 @@
   }
 
   .steps-bg {
-    padding: 3.5rem 2.5rem;
+    padding: 3rem 2.5rem;
   }
 
   .steps-card-title {
@@ -514,9 +510,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .home-social {
-    right: -3rem;
-    row-gap: 4.5rem;
+  .home-search {
+    width: auto;
   }
 
   .about-container {
