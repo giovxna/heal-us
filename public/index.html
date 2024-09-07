@@ -31,7 +31,7 @@
                     <li class="nav-item">
                         <a href="#faqs" class="nav-link">FAQ</a>
                     </li>
-    
+
                 </ul>
 
                 <div class="nav-close" id="nav-close">
@@ -47,7 +47,7 @@
 
     <main class="main">
         <!-- banner -->
-        <section class="home" id="home">
+        <section class="home section" id="home">
             <div class="home-container container grid">
                 <!-- <img src="./assets/images/family.png" alt="" class="home-img" /> -->
                 <div class="home-data">
@@ -59,14 +59,18 @@
                         <button type="button" class="button button-flex" id="search-btn">Conversar</button>
                     </form>
                     <div class="result" id="search-result">
-                        
+
                     </div>
                 </div>
+
+            </div>
+        </section>
+        <!-- cards -->
+        <section class="cards section" id="cards">
+            <div class="cards-container container grid">
                 
             </div>
-
         </section>
-
         <!-- sobre -->
         <section class="about section container" id="about">
             <div class="about-container grid">
@@ -254,59 +258,59 @@
 
 <script src="./assets/js/index.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-   var apiKey = "{{process.env.API_KEY}}"
+    document.addEventListener("DOMContentLoaded", function () {
+        var apiKey = "{{process.env.API_KEY}}"
 
-    var searchButton = document.getElementById("search-btn");
+        var searchButton = document.getElementById("search-btn");
 
-    searchButton.addEventListener("click", function() {
-        var searchValue = document.getElementById("search-prompt").value;
+        searchButton.addEventListener("click", function () {
+            var searchValue = document.getElementById("search-prompt").value;
 
-        if (searchValue) {
-            var prompt = {
-                system_instruction: {
-                    parts: {
-                        text: "Você é uma IA chamada HealUs, desenvolvida para ajudar os usuários a melhorar sua saúde por meio da prevenção e promoção de hábitos saudáveis. Seu propósito principal é fornecer orientações personalizadas, responder a perguntas relacionadas à saúde, e recomendar mudanças de estilo de vida baseadas em dados específicos dos usuários. Sempre que interagir, mantenha o foco na saúde preventiva, guiando o usuário a entender como pequenas mudanças de comportamento, dieta e rotina podem impactar positivamente sua saúde a longo prazo. Utilize dados fornecidos pelo usuário e informações confiáveis para oferecer conselhos claros e personalizados. Mantenha um tom positivo, encorajador e acolhedor, incentivando o cuidado proativo e destacando os benefícios de um estilo de vida saudável."
+            if (searchValue) {
+                var prompt = {
+                    system_instruction: {
+                        parts: {
+                            text: "Você é uma IA chamada HealUs, desenvolvida para ajudar os usuários a melhorar sua saúde por meio da prevenção e promoção de hábitos saudáveis. Seu propósito principal é fornecer orientações personalizadas, responder a perguntas relacionadas à saúde, e recomendar mudanças de estilo de vida baseadas em dados específicos dos usuários. Sempre que interagir, mantenha o foco na saúde preventiva, guiando o usuário a entender como pequenas mudanças de comportamento, dieta e rotina podem impactar positivamente sua saúde a longo prazo. Utilize dados fornecidos pelo usuário e informações confiáveis para oferecer conselhos claros e personalizados. Mantenha um tom positivo, encorajador e acolhedor, incentivando o cuidado proativo e destacando os benefícios de um estilo de vida saudável."
+                        }
+                    },
+                    contents: {
+                        parts: {
+                            text: searchValue
+                        }
                     }
-                },
-                contents: {
-                    parts: {
-                        text: searchValue
-                    }
-                }
-            };
+                };
 
-            searchButton.disabled = true;
+                searchButton.disabled = true;
 
-            fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(prompt)
-            })
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(data) {
-                searchButton.disabled = false;
+                fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(prompt)
+                })
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        searchButton.disabled = false;
 
-                var result = data.candidates[0].content.parts[0].text;
+                        var result = data.candidates[0].content.parts[0].text;
 
-                result = result.replace(/<\/?[^>]+(>|$)/g, "");
+                        result = result.replace(/<\/?[^>]+(>|$)/g, "");
 
-                var searchResult = document.getElementById("search-result");
-                searchResult.innerHTML = result;
-            })
-            .catch(function(error) {
-                console.error("Erro:", error);
-                searchButton.disabled = false;
-            });
-        } else {
-            alert("Por favor, insira uma pergunta.");
-        }
+                        var searchResult = document.getElementById("search-result");
+                        searchResult.innerHTML = result;
+                    })
+                    .catch(function (error) {
+                        console.error("Erro:", error);
+                        searchButton.disabled = false;
+                    });
+            } else {
+                alert("Por favor, insira uma pergunta.");
+            }
+        });
     });
-});
 </script>
 
 </html>
