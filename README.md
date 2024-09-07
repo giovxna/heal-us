@@ -25,6 +25,9 @@ O projeto foi criado como entrega do desafio proposto durante a imersão de IA c
 ### Aplicação  
 A aplicação oferece uma interface simples e direta. Ao digitar um tópico de interesse, como "sono" ou "autocuidado", o sistema retorna um artigo relacionado. Se o usuário não tiver um tópico específico, ele pode explorar todos os conteúdos disponíveis ao clicar em "Visualizar". 
 
+![Veja na prática](https://heal-us.vercel.app/#)
+
+
 ### Tecnologias
 
    - **HTML5** 
@@ -37,4 +40,4 @@ A aplicação oferece uma interface simples e direta. Ao digitar um tópico de i
 2. **Conteúdo Mapeado**: O sistema busca no banco de dados um artigo relacionado ao tópico e o exibe na interface.
 3. **Explore mais**: Se preferir, o usuário pode clicar em "Visualizar" para explorar todos os artigos disponíveis.
 
-![Demonstração]()
+![Demonstração](https://github.com/giovxna/heal-us/blob/main/public/assets/images/Heal-Us.gif)
