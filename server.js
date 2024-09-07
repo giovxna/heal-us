@@ -6,7 +6,6 @@ const fs = require('fs');
 const app = express();
 
 app.get('/', (req, res) => {
-    // Carregar e substituir a API_KEY no index.html
     let html = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
     html = html.replace('{{process.env.API_KEY}}', process.env.API_KEY);
     res.send(html);
