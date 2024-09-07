@@ -4,6 +4,7 @@
     "express": "^4.19.2"
   },
   "scripts": {
-    "start": "node server.js" 
-}
+    "start": "node server.js"
+  },
+  "type": "module"
 }
