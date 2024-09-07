@@ -1,7 +1,7 @@
 <img src="https://github.com/giovxna/heal-us/blob/main/public/assets/images/capa-heal-us.png">
 
 <p align="center">
-Crie rotinas saudáveis com a ajuda de IA e cuide do seu bem-estar preventivamente!
+Crie rotinas saudáveis com a ajuda da HealUs e cuide do seu bem-estar preventivamente! 🍎🏋️‍♂️
 </p>
 
 <p align="center">
@@ -12,32 +12,32 @@ Crie rotinas saudáveis com a ajuda de IA e cuide do seu bem-estar preventivamen
 <hr>
 
 ### Sobre  
-**HealUs** é uma plataforma de saúde preventiva que utiliza inteligência artificial avançada para analisar hábitos de vida, como alimentação, sono e atividades físicas, oferecendo recomendações personalizadas para promover bem-estar e prevenir problemas de saúde futuros. A plataforma permite que os usuários façam perguntas e interajam com a IA, de maneira semelhante a assistentes de conversa, como o ChatGPT, mas com foco em saúde personalizada e preventiva.
+**HealUs** é uma plataforma de saúde preventiva que oferece acesso a conteúdos informativos sobre temas como sono, autocuidado, hábitos saudáveis, e funcionamento físico. A proposta da HealUs é ajudar as pessoas a adotarem práticas de bem-estar, promovendo um estilo de vida mais saudável e equilibrado através de dicas e artigos baseados em tópicos de interesse. Aqui, você encontra recomendações que podem ser aplicadas no seu dia a dia para melhorar a saúde física e mental. 
 
 ### Contexto do Projeto  
-O projeto foi criado para oferecer uma solução de saúde focada na prevenção, integrando a IA para análise de dados individuais e respostas personalizadas. A ideia é fornecer um suporte contínuo, proativo e ajustado ao estilo de vida dos usuários, combinando **engenharia de prompt** e dados de saúde.
+O projeto foi criado para facilitar o acesso a informações sobre saúde preventiva de forma simples e prática. A plataforma fornece uma base de dados mapeada com artigos que são exibidos conforme o tópico de interesse do usuário. Quando o usuário digita um tema (como "sono" ou "hábitos saudáveis"), o HealUs retorna conteúdos relevantes para ajudá-lo a criar rotinas de autocuidado e bem-estar. 
 
 O projeto foi criado como entrega do desafio proposto durante a imersão de IA com o Google Gemini promovida pela Alura e pelo Google.
 
 ### Contexto Negocial  
-O **HealUs** responde à crescente demanda por soluções de saúde digital que priorizam a prevenção e o monitoramento de hábitos, diferenciando-se de buscas genéricas na internet, como o Google, ao fornecer recomendações específicas com base em dados individuais e interações mais profundas. Ele ajuda empresas de saúde, seguradoras e usuários finais a melhorar a qualidade de vida e reduzir custos com saúde por meio de mudanças de comportamento.
+**HealUs** diferencia-se de buscas genéricas na internet, como o Google, ao oferecer uma experiência mais direta e focada. Em vez de fornecer milhares de links, a plataforma exibe artigos mapeados e curados sobre tópicos relacionados à saúde. Isso ajuda usuários a acessarem informações confiáveis e aplicáveis, promovendo uma abordagem proativa para melhorar seu estilo de vida. 
 
 ### Aplicação  
-A aplicação possui uma interface intuitiva que permite que o usuário faça perguntas sobre sua saúde e receba respostas e recomendações imediatas, oferecendo sugestões personalizadas ao longo do tempo para manter o bem-estar. 
-
-- **Frontend:** O frontend é responsável por capturar a entrada do usuário (pergunta relacionada à saúde), enviar a solicitação para a API Gemini, e exibir a resposta na interface do usuário.
-- **Backend:** O backend armazena a chave da API em um arquivo `.env` e a fornece ao frontend através de uma rota dedicada. Isso permite que a chave seja mantida segura, evitando a exposição direta no código frontend.
-- **Integração com a API Gemini:** O sistema envia um prompt com instruções específicas para a IA HealUs e recebe uma resposta, que é apresentada ao usuário.
+A aplicação oferece uma interface simples e direta. Ao digitar um tópico de interesse, como "sono" ou "autocuidado", o sistema retorna um artigo relacionado. Se o usuário não tiver um tópico específico, ele pode explorar todos os conteúdos disponíveis ao clicar em "Visualizar". 
 
 ### Tecnologias
 
-   - **HTML5**
+   - **HTML5** 
    - **CSS3**
-   - **JavaScript**
-   - **Fetch API**
-   - **Node.js**
-   - **Express.js**
-   - **dotenv**
-   - **Gemini API**
-   - **.env**
+   - **JavaScript** 
+   - **JSON** 
 
+### Como Funciona
+1. **Digite seu Tópico**: O usuário digita um tópico de interesse relacionado à saúde (como "sono" ou "autocuidado").
+2. **Conteúdo Mapeado**: O sistema busca no banco de dados um artigo relacionado ao tópico e o exibe na interface.
+3. **Explore mais**: Se preferir, o usuário pode clicar em "Visualizar" para explorar todos os artigos disponíveis.
+
+
+<video width="320" height="240" controls>
+  <source src="caminho/do/video.mp4" type="video/mp4">
+</video>
