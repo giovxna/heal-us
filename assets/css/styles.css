@@ -21,7 +21,7 @@
 .nav-logo,
 .nav-toggle,
 .nav-close {
-  color: var(--title);
+  color: var(--green);
 }
 
 .nav-logo {
@@ -135,10 +135,29 @@
   color: var(--roxo);
 }
 
+.home-search {
+  background-color: var(--bg);
+  padding: .35rem .35rem .35rem .5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  border: 3px solid rgb(197, 197, 197);
+  margin-bottom: 2rem;
+}
+
+.home-search-input {
+  width: 90%;
+  margin: 0 .5rem;
+}
+
+.home-search-input::placeholder {
+  color: var(--text);
+}
+
 /* pré-definições de todos os botões */
 .button {
   display: inline-block;
-  background-color: var(--laranja);
+  background-color: var(--green);
   color: #fff;
   font-weight: 700;
   padding: 1rem 1.75rem;
@@ -147,7 +166,7 @@
 }
 
 .button:hover {
-  background-color: var(--verde);
+  background-color: var(--dark-green);
 }
 
 .button-flex {
@@ -156,10 +175,6 @@
   column-gap: 0.5rem;
 }
 
-.button-link {
-  color: var(--laranja);
-  font-weight: 400;
-}
 
 /* sobre */
 .about-container {
@@ -370,6 +385,10 @@
 }
 
 @media screen and (min-width: 576px) {
+  .home-search {
+    width: 412px;
+  }
+
   .steps-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -450,6 +469,10 @@
 
   .home-img {
     width: 350px;
+  }
+
+  .home-search {
+    margin-bottom: 3rem;
   }
 
   .about-img {
