@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -124,4 +126,25 @@ img {
 p {
     font-weight: 500;
     color: var(--text);
+}
+
+/* pré-definições de todos os botões */
+.button {
+    display: inline-block;
+    background-color: var(--green);
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--dark-green);
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
 }
