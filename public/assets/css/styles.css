@@ -117,11 +117,13 @@
 .home-container {
   position: relative;
   row-gap: 2rem;
+  margin-bottom: -3rem;
 }
 
 .home-title {
   font-size: var(--big-font-size);
   margin-bottom: var(--m3);
+
 }
 
 .home-title span {
@@ -135,7 +137,7 @@
   align-items: center;
   border-radius: 1rem;
   border: 3px solid rgb(197, 197, 197);
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 
 .home-search-input {
@@ -189,6 +191,72 @@
   font-size: 1rem;
   color: var(--green);
   margin-top: 0.15rem;
+}
+
+.blog.container {
+  padding-bottom: var(--m5);
+  display: none;
+}
+
+.blog-content {
+  row-gap: 3rem;
+}
+
+.blog-image {
+  position: relative;
+  margin-bottom: var(--m4);
+}
+
+.blog-img {
+  border-radius: 0.5rem;
+}
+
+.blog-button {
+  background-color: var(--container-color);
+  display: inline-flex;
+  padding: 1.15rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--green);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blog-button i {
+  transform: rotate(-30deg);
+}
+
+.blog-title {
+  color: var(--green);
+  font-size: var(--title);
+  margin-bottom: var(--m2);
+}
+
+.blog-description {
+  margin-bottom: var(--m4);
+}
+
+.blog-footer,
+.blog-reaction {
+  display: flex;
+  align-items: center;
+}
+
+.blog-footer {
+  column-gap: var(--m4);
+}
+
+.blog-reaction {
+  column-gap: 0.25rem;
+}
+
+.blog-reaction i {
+  font-size: 1.25rem;
+}
+
+.blog-reaction span {
+  font-size: var(--small-font-size);
 }
 
 /* passo a passo */
@@ -341,7 +409,8 @@
     margin-right: var(--m3);
   }
 
-  .home-img {
+  .home-img,
+  .blog-img {
     width: 180px;
   }
 
@@ -360,6 +429,10 @@
 }
 
 @media screen and (min-width: 576px) {
+  .blog-content {
+    grid-template-columns: 450px;
+    justify-content: center;
+  }
 
   .steps-container {
     grid-template-columns: repeat(2, 1fr);
@@ -409,7 +482,8 @@
     align-items: center;
   }
 
-  .home-img {
+  .home-,
+  .blog-img {
     width: 280px;
     order: 1;
   }
@@ -440,14 +514,15 @@
   }
 
   .home {
-    padding: 8em 0 5rem;
+    padding: 6em 0 1rem;
   }
 
   .home-search {
     margin-bottom: 3rem;
   }
 
-  .about-img {
+  .about-img,
+  .blog-img {
     width: 380px;
   }
 
@@ -492,5 +567,18 @@
 
   .about-container {
     column-gap: 7rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+
+  .blog.container {
+    padding-bottom: .2rem;
+  }
+
+  .blog-content {
+    grid-template-columns: repeat(2, 400px);
+    column-gap: 5rem;
+    padding-top: 2rem;
   }
 }
