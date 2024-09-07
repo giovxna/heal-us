@@ -4,6 +4,6 @@
     "express": "^4.19.2"
   },
   "scripts": {
-  "build": "next build"  
+    "start": "node server.js" 
 }
 }
