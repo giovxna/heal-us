@@ -12,7 +12,7 @@ Crie rotinas saudáveis com a ajuda da HealUs e cuide do seu bem-estar preventiv
 <hr>
 
 ### Sobre  
-**HealUs** é uma plataforma de saúde preventiva que oferece acesso a conteúdos informativos sobre temas como sono, autocuidado, hábitos saudáveis, e funcionamento físico. A proposta da HealUs é ajudar as pessoas a adotarem práticas de bem-estar, promovendo um estilo de vida mais saudável e equilibrado através de dicas e artigos baseados em tópicos de interesse. Aqui, você encontra recomendações que podem ser aplicadas no seu dia a dia para melhorar a saúde física e mental. 
+**HealUs** é uma plataforma de saúde preventiva que oferece acesso a conteúdos informativos sobre temas como sono, autocuidado, hábitos saudáveis e funcionamento físico. A proposta da HealUs é ajudar as pessoas a adotarem práticas de bem-estar, promovendo um estilo de vida mais saudável e equilibrado através de dicas e artigos baseados em tópicos de interesse. Aqui, você encontra recomendações que podem ser aplicadas no seu dia a dia para melhorar a saúde física e mental. 
 
 ### Contexto do Projeto  
 O projeto foi criado para facilitar o acesso a informações sobre saúde preventiva de forma simples e prática. A plataforma fornece uma base de dados mapeada com artigos que são exibidos conforme o tópico de interesse do usuário. Quando o usuário digita um tema (como "sono" ou "hábitos saudáveis"), o HealUs retorna conteúdos relevantes para ajudá-lo a criar rotinas de autocuidado e bem-estar. 
